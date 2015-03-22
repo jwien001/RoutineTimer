@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="4dp"
+    android:orientation="horizontal"
+    style="?android:attr/buttonBarStyle">
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/routine_list_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:gravity="center_vertical"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Some really long text to make the ellipsize"
+        android:onClick="editRoutine"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="fill_parent"
+        android:src="@android:drawable/ic_media_play"
+        android:onClick="startRoutine"
+        style="?android:attr/buttonBarButtonStyle" />
+
+</LinearLayout>
